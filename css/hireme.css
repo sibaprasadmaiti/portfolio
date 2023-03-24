@@ -1,0 +1,125 @@
+.hiremodal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #000;
+    background: rgba(143, 143, 143, 0.568);
+    z-index: 1000;
+    display: block;
+    transition: all 0.5s;
+  }
+  
+  .hiremodal-content{
+    width: 700px;
+    max-width: 85%;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+  }
+  
+  .hiremeForm {
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.795);
+    border-radius: 10px;
+  }
+  
+  .hiremeForm h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: "Courgette", cursive;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .hiremeForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+  }
+  
+  .hiremeForm .inputBox input,
+  .hiremeForm .inputBox select,
+  .hiremeForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    resize: none;
+    transition: 0.5s;
+    background: transparent;
+  }
+  
+  .hiremeForm .inputBox select option{
+    color: rgb(17, 16, 16);
+    font-size: 14px;
+  }
+  
+  .hiremeForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .hiremeForm .inputBox .error_msg {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .hiremeForm .inputBox input:focus ~ span,
+  .hiremeForm .inputBox input:valid ~ span,
+  .hiremeForm .inputBox textarea:focus ~ span,
+  .hiremeForm .inputBox textarea:valid ~ span {
+    font-size: 14px;
+    transform: translateY(-20px);
+  }
+  
+  .hiremeForm .inputBox .sendBtn {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 22px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 100%;
+  }
+  
+  .hiremeForm .inputBox .sendBtn:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-cancel {
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    padding: 7px 12px;
+    margin-top: 13px;
+    margin-right: 13px;
+    border-radius: 50%;
+    background-color: #f50202fb;
+    float: right;
+  }
+  
+  .btn-cancel i {
+    margin-top: 2px;
+    font-size: 20px;
+  } 
